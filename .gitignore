@@ -27,12 +27,19 @@ wheels/
 # Environment
 .env
 .venv
+.venv311
+.venv/
+.venv311/
+.env
+.env.example
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.qoder
+.qoder/
 *~
 
 # Data

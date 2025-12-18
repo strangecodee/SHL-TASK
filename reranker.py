@@ -78,38 +78,35 @@ class GenAIReranker:
         if final_count is None:
             final_count = Config.FINAL_RECOMMENDATIONS
         
-        domain = self.analyze_query_domain(query)
-        
         # Separate K and P type assessments
         k_assessments = [c for c in candidates if c['test_type'] == 'K']
         p_assessments = [c for c in candidates if c['test_type'] == 'P']
         
-        # Determine split based on domain
-        if domain == 'technical':
-            k_count = int(final_count * Config.TECHNICAL_K_RATIO)
-            p_count = final_count - k_count
-        elif domain == 'behavioral':
-            p_count = int(final_count * Config.BEHAVIORAL_P_RATIO)
-            k_count = final_count - p_count
-        else:  # mixed
-            k_count = int(final_count * Config.MIXED_K_RATIO)
-            p_count = final_count - k_count
+        # Fixed split: 70% K, 30% P
+        k_count = min(int(final_count * 0.7), len(k_assessments))
+        p_count = min(final_count - k_count, len(p_assessments))
+        
+        # Adjust if we don't have enough P
+        if k_count + p_count < final_count:
+            k_count = min(final_count - p_count, len(k_assessments))
         
         # Select balanced recommendations
         balanced = []
         balanced.extend(k_assessments[:k_count])
         balanced.extend(p_assessments[:p_count])
         
-        # If we don't have enough of one type, fill with the other
-        while len(balanced) < final_count:
-            if len(k_assessments) > k_count:
-                balanced.append(k_assessments[k_count])
-                k_count += 1
-            elif len(p_assessments) > p_count:
-                balanced.append(p_assessments[p_count])
-                p_count += 1
-            else:
-                break
+        # Fill remaining slots
+        remaining = final_count - len(balanced)
+        if remaining > 0:
+            # Add from K if available
+            k_remaining = k_assessments[k_count:k_count + remaining]
+            balanced.extend(k_remaining)
+            remaining -= len(k_remaining)
+            
+            # Add from P if still needed
+            if remaining > 0:
+                p_remaining = p_assessments[p_count:p_count + remaining]
+                balanced.extend(p_remaining)
         
         return balanced[:final_count]
     
@@ -192,28 +189,4 @@ Example format: [3, 1, 7, 2, 5, 9, 4, 6, 8, 10]
             return self.balance_recommendations(candidates, query, final_count)
 
 if __name__ == "__main__":
-    from data_processor import DataProcessor
-    from retrieval import VectorRetrieval
-    
-    # Load data
-    processor = DataProcessor()
-    catalog = processor.load_catalog()
-    
-    if catalog.empty:
-        print("No catalog found. Please run scraper.py first.")
-    else:
-        # Retrieve candidates
-        retriever = VectorRetrieval()
-        retriever.load_catalog_and_embeddings(catalog)
-        
-        test_query = "I am hiring for Java developers who can collaborate with business teams"
-        candidates = retriever.retrieve_top_n(test_query, top_n=20)
-        
-        # Re-rank and balance
-        reranker = GenAIReranker()
-        recommendations = reranker.recommend(test_query, candidates, final_count=10)
-        
-        print(f"\nFinal {len(recommendations)} recommendations for: {test_query}\n")
-        for i, rec in enumerate(recommendations, 1):
-            print(f"{i}. {rec['assessment_name']} ({rec['test_type']})")
-            print(f"   {rec['assessment_url']}\n")
+    print("Reranker module - no standalone execution")
