@@ -25,7 +25,7 @@ RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTr
 RUN python vector_store.py
 
 # Expose port
-EXPOSE 8000
+EXPOSE 10000
 
 # Run the application
 CMD ["python", "run.py"]
