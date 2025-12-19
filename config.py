@@ -40,5 +40,5 @@ class Config:
     
     # API Configuration
     API_HOST = '0.0.0.0'
-    API_PORT = 8000
+    API_PORT = int(os.environ.get('PORT', 10000))
     API_TIMEOUT = 30
