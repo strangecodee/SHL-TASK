@@ -143,6 +143,7 @@ services:
     environment:
       - API_HOST=0.0.0.0
       - API_PORT=8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
     volumes:
       - ./data:/app/data
     restart: unless-stopped
@@ -152,6 +153,30 @@ Run:
 ```bash
 docker-compose up -d
 ```
+
+**Using Gemini API Key with Docker:**
+
+To use the Gemini API for enhanced re-ranking:
+
+1. Get a Gemini API key from [Google AI Studio](https://aistudio.google.com/)
+2. Create a `.env` file in the project root:
+
+```env
+GEMINI_API_KEY=your_actual_gemini_api_key_here
+```
+
+3. Run with Docker Compose:
+
+```bash
+docker-compose --env-file .env up -d
+```
+
+Alternatively, you can pass the API key directly:
+
+```bash
+GEMINI_API_KEY=your_actual_gemini_api_key_here docker-compose up -d
+```
+
 
 ## Cloud Deployment
 

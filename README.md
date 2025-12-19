@@ -170,6 +170,28 @@ API_HOST = '0.0.0.0'
 API_PORT = 8000
 ```
 
+### Optional: Enhanced Re-ranking with Gemini API
+
+The system supports enhanced re-ranking using Google's Gemini API for improved recommendation quality.
+To use this feature:
+
+1. Get a Gemini API key from [Google AI Studio](https://aistudio.google.com/)
+2. Set the API key in environment variables:
+
+```bash
+export GEMINI_API_KEY=your_actual_gemini_api_key_here
+```
+
+Or create a `.env` file:
+
+```
+GEMINI_API_KEY=your_actual_gemini_api_key_here
+```
+
+When the API key is provided, the system will use Gemini for intelligent re-ranking.
+Without the API key, the system falls back to rule-based balancing.
+
+
 ## Dependencies
 
 ```txt
@@ -194,6 +216,6 @@ python test_production_api.py
 
 - Catalog built from Train-Set URLs (54 unique assessments)
 - All URLs match training data format
-- System uses rule-based K/P balancing (no Gemini API required)
+- System uses rule-based K/P balancing by default, with optional Gemini API enhancement
 - FAISS index uses IndexFlatIP for exact cosine similarity
 - API serves from pre-built index (no real-time embedding generation overhead)

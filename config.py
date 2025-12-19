@@ -40,5 +40,5 @@ class Config:
     
     # API Configuration
     API_HOST = '0.0.0.0'
-    API_PORT = 8000
+    API_PORT = 8001
     API_TIMEOUT = 30

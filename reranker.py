@@ -14,7 +14,7 @@ class GenAIReranker:
             self.use_llm = False
         else:
             genai.configure(api_key=api_key)
-            self.model = genai.GenerativeModel('gemini-pro')
+            self.model = genai.GenerativeModel('gemini-2.5-flash')
             self.use_llm = True
     
     def analyze_query_domain(self, query: str) -> str:
