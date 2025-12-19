@@ -24,8 +24,8 @@ RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTr
 # Build FAISS index
 RUN python vector_store.py
 
-# Expose port
+# Expose Render's default port
 EXPOSE 10000
 
-# Run the application
-CMD ["python", "run.py"]
+# Run the application with uvicorn directly
+CMD ["uvicorn", "api_server:app", "--host", "0.0.0.0", "--port", "10000", "--log-level", "info"]
