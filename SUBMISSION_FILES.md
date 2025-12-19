@@ -24,7 +24,7 @@
 
 ## Output Files
 
-1. `data/recommendations_output.csv` - Final submission file with 2762 rows
+1. `data/anurag_maurya.csv` - Final submission file with 2762 rows
 2. `data/evaluation_results.json` - Detailed evaluation metrics
 
 ## Supporting Files

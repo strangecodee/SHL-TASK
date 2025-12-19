@@ -55,7 +55,7 @@ SHL-TASK/
     ├── shl_catalog.csv        # 54 assessments
     ├── faiss_index.bin        # FAISS index
     ├── faiss_metadata.pkl     # Assessment metadata
-    ├── recommendations_output.csv # Submission file
+    ├── anurag_maurya.csv # Submission file
     └── evaluation_results.json    # Metrics
 ```
 
@@ -123,7 +123,7 @@ python production_evaluator.py
 
 # 4. Generate test predictions (9 queries, 90 rows)
 python production_csv_generator.py
-# Output: data/recommendations_output.csv
+# Output: data/anurag_maurya.csv
 
 # 5. Start API server
 python api_server.py
@@ -143,7 +143,7 @@ python api_server.py
 
 ## Output Files
 
-### recommendations_output.csv
+### anurag_maurya.csv
 Submission file with 90 rows (9 queries × 10 recommendations)
 ```csv
 Query,Assessment_url

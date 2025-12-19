@@ -75,7 +75,7 @@ Query → Embedding (all-MiniLM-L6-v2) → FAISS Search → Reranking → 5-10 B
 
 ### Output Files
 
-1. `data/recommendations_output.csv` - Final submission file with 2762 rows (2761 recommendations + header)
+1. `data/anurag_maurya.csv` - Final submission file with 2762 rows (2761 recommendations + header)
 2. `data/evaluation_results.json` - Detailed evaluation metrics
 3. `data/evaluation_results.csv` - Summary evaluation metrics
 

@@ -31,7 +31,7 @@ class Config:
     EMBEDDINGS_FILE = os.path.join(DATA_DIR, 'catalog_embeddings.npy')
     TRAIN_DATA_FILE = os.path.join(DATA_DIR, 'train_queries.csv')
     TEST_DATA_FILE = os.path.join(DATA_DIR, 'test_queries.csv')
-    OUTPUT_FILE = os.path.join(DATA_DIR, 'recommendations_output.csv')
+    OUTPUT_FILE = os.path.join(DATA_DIR, 'anurag_maurya.csv')
     
     # Excel dataset (Gen_AI Dataset.xlsx)
     GEN_AI_DATASET_FILE = 'Gen_AI Dataset.xlsx'
@@ -40,5 +40,5 @@ class Config:
     
     # API Configuration
     API_HOST = '0.0.0.0'
-    API_PORT = 8001
+    API_PORT = 8000
     API_TIMEOUT = 30

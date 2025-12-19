@@ -797,10 +797,22 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/core-java-advanced-level-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/core-java-entry-level-new/",
           "https://www.shl.com/solutions/products/product-catalog/view/java-8-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/drupal-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/microsoft-excel-365-new/"
+          "https://www.shl.com/solutions/products/product-catalog/view/core-java-entry-level-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/sql-server-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/javascript-new/"
+        ]
+      },
+      {
+        "query": "I am hiring for Java developers who can also collaborate effectively with my business teams. Looking for an assessment(s) that can be completed in 40 minutes.",
+        "recall_at_10": 1.0,
+        "relevant_count": 1,
+        "predicted_urls": [
+          "https://www.shl.com/solutions/products/product-catalog/view/java-8-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/core-java-advanced-level-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/core-java-entry-level-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/sql-server-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/javascript-new/"
         ]
       },
       {
@@ -809,10 +821,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/core-java-advanced-level-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/core-java-entry-level-new/",
           "https://www.shl.com/solutions/products/product-catalog/view/java-8-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/drupal-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/microsoft-excel-365-new/"
+          "https://www.shl.com/solutions/products/product-catalog/view/core-java-entry-level-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/sql-server-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/verify-verbal-ability-next-generation/"
         ]
       },
       {
@@ -821,22 +833,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/core-java-advanced-level-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/core-java-entry-level-new/",
           "https://www.shl.com/solutions/products/product-catalog/view/java-8-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/drupal-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/microsoft-excel-365-new/"
-        ]
-      },
-      {
-        "query": "I am hiring for Java developers who can also collaborate effectively with my business teams. Looking for an assessment(s) that can be completed in 40 minutes.",
-        "recall_at_10": 1.0,
-        "relevant_count": 1,
-        "predicted_urls": [
-          "https://www.shl.com/solutions/products/product-catalog/view/core-java-advanced-level-new/",
           "https://www.shl.com/solutions/products/product-catalog/view/core-java-entry-level-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/java-8-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/drupal-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/microsoft-excel-365-new/"
+          "https://www.shl.com/solutions/products/product-catalog/view/verify-verbal-ability-next-generation/",
+          "https://www.shl.com/solutions/products/product-catalog/view/javascript-new/"
         ]
       },
       {
@@ -844,11 +844,23 @@
         "recall_at_10": 0.0,
         "relevant_count": 1,
         "predicted_urls": [
+          "https://www.shl.com/solutions/products/product-catalog/view/java-8-new/",
           "https://www.shl.com/solutions/products/product-catalog/view/core-java-advanced-level-new/",
           "https://www.shl.com/solutions/products/product-catalog/view/core-java-entry-level-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/java-8-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/drupal-new/",
-          "https://www.shl.com/solutions/products/product-catalog/view/microsoft-excel-365-new/"
+          "https://www.shl.com/solutions/products/product-catalog/view/javascript-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/sql-server-new/"
+        ]
+      },
+      {
+        "query": "I want to hire new graduates for a sales role in my company, the budget is for about an hour for each test. Give me some options",
+        "recall_at_10": 1.0,
+        "relevant_count": 1,
+        "predicted_urls": [
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
+          "https://www.shl.com/solutions/products/product-catalog/view/writex-email-writing-sales-new/"
         ]
       },
       {
@@ -857,10 +869,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/",
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/",
           "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/"
+          "https://www.shl.com/solutions/products/product-catalog/view/writex-email-writing-sales-new/"
         ]
       },
       {
@@ -869,10 +881,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/",
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/",
           "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/"
+          "https://www.shl.com/solutions/products/product-catalog/view/writex-email-writing-sales-new/"
         ]
       },
       {
@@ -881,22 +893,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/",
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/",
           "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/"
-        ]
-      },
-      {
-        "query": "I want to hire new graduates for a sales role in my company, the budget is for about an hour for each test. Give me some options",
-        "recall_at_10": 1.0,
-        "relevant_count": 1,
-        "predicted_urls": [
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
-          "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/"
+          "https://www.shl.com/solutions/products/product-catalog/view/writex-email-writing-sales-new/"
         ]
       },
       {
@@ -905,10 +905,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/",
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/",
           "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/"
+          "https://www.shl.com/solutions/products/product-catalog/view/writex-email-writing-sales-new/"
         ]
       },
       {
@@ -917,10 +917,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/",
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
-          "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/"
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/writex-email-writing-sales-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/"
         ]
       },
       {
@@ -929,10 +929,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/",
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/",
           "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/"
+          "https://www.shl.com/solutions/products/product-catalog/view/writex-email-writing-sales-new/"
         ]
       },
       {
@@ -941,10 +941,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/",
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/",
           "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/"
+          "https://www.shl.com/solutions/products/product-catalog/view/writex-email-writing-sales-new/"
         ]
       },
       {
@@ -953,10 +953,10 @@
         "relevant_count": 1,
         "predicted_urls": [
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/technical-sales-associate-solution/",
           "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-7-1/",
-          "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/",
-          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/"
+          "https://www.shl.com/solutions/products/product-catalog/view/entry-level-sales-sift-out-7-1/",
+          "https://www.shl.com/solutions/products/product-catalog/view/writex-email-writing-sales-new/",
+          "https://www.shl.com/solutions/products/product-catalog/view/sales-representative-solution/"
         ]
       },
       {
