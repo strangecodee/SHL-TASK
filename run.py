@@ -6,6 +6,7 @@ Runs complete pipeline: setup → evaluation → CSV generation → API server
 
 import sys
 import subprocess
+import os
 from pathlib import Path
 
 def run_command(cmd, description):
@@ -53,13 +54,17 @@ def main():
     print(f"\n{'='*60}")
     print("Step 4/4: Starting FastAPI server")
     print(f"{'='*60}\n")
-    print("API will be available at: http://localhost:8000")
+    
+    # Use the port from environment or default to 10000 for Render compatibility
+    port = os.environ.get('PORT', '10000')
+    print(f"API will be available at: http://0.0.0.0:{port}")
     print("Endpoints:")
     print("  - GET  /health")
     print("  - POST /recommend")
     print("\nPress CTRL+C to stop the server\n")
     
-    subprocess.run("python api_server.py", shell=True)
+    # Use uvicorn directly with the correct port configuration
+    subprocess.run(f"uvicorn api_server:app --host 0.0.0.0 --port {port} --log-level info", shell=True)
 
 if __name__ == "__main__":
     try:
